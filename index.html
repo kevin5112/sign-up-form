@@ -9,28 +9,51 @@
 </head>
 <body>
     <div class="container">
-        <div class="backgroundHeader">
-            <header>Odin</header>
-            <img class="backgroundImage" src="./images/background-image.jpg" alt="leaves">
+        <div class="picture">
+            <div class="logo">
+                <img class="logoIcon" src="./images/odin-lined.png" alt="dog">
+                <h1 class="odin">Odin</h1>
+            </div>
         </div>
         <div class="signUp">
             <div class="signUpText">
-                <p class="fillerText">This is not a real online service! You know you need something like this in your life ot help you realize you deepest dreams. <br>Sign up <em>now</em> to get started.</p>
-                <p class="fillerText">You <em>know</em> you want to.</p>
+                <div class="textContent">
+                    <p class="fillerText">This is not a real online service! You know you need something like this in your life to help you realize you deepest dreams. <br>Sign up <em>now</em> to get started.</p>
+                    <br>
+                    <p class="fillerText">You <em>know</em> you want to.</p>
+                </div>
             </div>
             <div class="form">
                 <p class="hypeText">Let's do this!</p>
                 <div class="formInputs">
-                    <label for="fName">FIRST NAME<input type="text" name="fName" id="fName"></label>
-                    <label for="lName">LAST NAME<input type="text" name="lName" id="lName"></label>
-                    <label for="email">EMAIL<input type="email" name="email" id="email"></label>
-                    <label for="pNumber">PHONE NUMBER<input type="number" name="pNumber" id="pNumber" minlength="10" maxlength="10"></label>
-                    <label for="password">PASSWORD<input type="password" name="password" id="password"></label>
-                    <label for="password">CONFIRM PASSWORD<input type="password" name="password" id="password"></label>
+                    <div class="fnameInput">
+                        <label for="fName">FIRST NAME</label>
+                        <input type="text" name="fName" id="fName">
+                    </div>
+                    <div class="lnameInput">
+                        <label for="lName">LAST NAME</label>
+                        <input type="text" name="lName" id="lName">
+                    </div>
+                    <div class="emailInput">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="pNumberInput">
+                        <label for="pNumber">PHONE NUMBER</label>
+                        <input type="number" name="pNumber" id="pNumber" minlength="10" maxlength="10">
+                    </div>
+                    <div class="password">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="passwordConfirm">
+                        <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="passwordConfirm" id="passwordConfirm">
+                    </div>
                 </div>
             </div>
-            <button class="createAccountBtn" type="input">Create Account</button>
             <div class="existingAccount">
+                <button class="createAccountBtn" type="input">Create Account</button>
                 <p class="existAcc">Already have an account? <a href="#login">Log in</a></p>
             </div>
         </div>

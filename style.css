@@ -1,5 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200&family=Roboto&display=swap');
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('./fonts/Norse-Bold.otf') format('opentype');
+}
 
-.backgroundImage {
-    position: absolute;
+:root {
+  --color: #e6007e;
+  --txt: rgb(185, 185, 185);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  /* color: var(--txt); */
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container,
+.logo {
+  display: flex;
+  flex: row wrap;
+}
+
+/* LEFT SIDE */
+
+.picture {
+  background-image: url(./images/background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40vw;
+}
+
+.logo {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 20vh;
+  gap: 1vw;
+  padding: 15px 0;
+
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+}
+
+.logoIcon {
+  height: 15vh;
+}
+
+.odin {
+  /* position: relative; */
+  color: white;
+  font-family: 'Norse-Bold', sans-serif;
+  font-size: 4em;
+}
+
+/* RIGHT SIDE */
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpText {
+  flex: 1.3 1 0;
+  background-color: lightgrey;
+}
+
+.textContent {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 24px;
+  margin: 5vh 5vw;
+  margin-right: 20vw;
+  top: auto;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  flex: 0.8 1 0;
+  padding: 2vh 20vw 2vh 10vw;
+  margin: 50px 0px;
+}
+
+.formInputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.formInputs input {
+  border: lightgray 1px solid;
+  border-radius: 5px;
+}
+
+.formInputs input:focus {
+  outline: none !important;
+  border: 1px solid forestgreen;
+  box-shadow: 0 0 10px lightgreen;
+}
+
+.formInputs > div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-top: 20px;
+}
+
+input {
+  height: 3vh;
+  width: 12vw;
+}
+
+.existingAccount {
+  flex: 1 1 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .picture {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-size: 100vw;
+  }
+
+  .logo {
+    width: 100vw;
+    position: static;
+    gap: 10px;
+  }
+}
+
+/* Existing account section */
+.existingAccount {
+  flex: 1 1 0;
+  background-color: lightgray;
+  padding: 50px;
+}
+
+.createAccountBtn {
+  width: 250px;
+  height: 60px;
+  background-color: forestgreen;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  border: forestgreen 3px solid;
+  transition-duration: 0.3s;
+}
+
+.createAccountBtn:hover {
+  background-color: white;
+  color: green;
+  cursor: pointer;
+}
+
+.existAcc {
+  padding-top: 40px;
+}
+
+.existAcc a {
+  text-decoration: none;
+  color: green;
+  font-weight: 600;
 }
